@@ -32,7 +32,7 @@ body{
     width:20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 .brand p{
     font-size:12px;
@@ -76,6 +76,7 @@ box-shadow: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .hero .text-content .hero-text{
     text-transform: capitalize;
@@ -590,3 +591,119 @@ width: 100%;
     .contact-wrap ul li:hover{
         color: #f2f2f2;
     }
+
+
+
+    @media screen and (max-width:600px){
+        .navbar .nav{
+            display: none;
+        }
+        .navbar{
+            justify-content: space-between;
+        }
+        .navbar .brand{
+            width:200px;
+        }
+        .navbar .btn{
+            font-size: 14px;
+            width:110px;
+            box-shadow:2px 5px 10px #000;
+        }
+        .hero .text-content h1{
+            line-height:30px;
+        }
+        .hero .text-content .btn {
+            font-size: 18px;
+           
+            width: 200px;
+            color: #f2f2f2;
+            box-shadow: 2px 10px 20px #000;
+            line-height: 18px;
+        }
+        .hero img {
+            position: absolute;
+            box-sizing: border-box;
+            width:250px;
+            top:50px;
+            right:-15px;
+            padding:0;
+            margin:0;
+         } 
+         .cards{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .about{
+            float: none;
+            clear: both;
+            display: fle;
+            flex-direction: column;
+        }
+        .about .content-right{
+            width:100;
+        }
+        .about .content-left{
+            width:100;
+        }
+        .service{
+            grid-template-columns: 1fr;
+            padding-bottom: 0;
+        }
+        .contact-section {
+            padding-top: 0;
+        }
+        .contact-section .heading .btn{
+            padding:10px 15px;
+            background:#260000;
+            color:#f2f2f2;
+            border-radius: 35px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow:2px 10px 20px #000;
+           
+        }
+        .contact-section .heading{
+        flex-direction: column;
+        justify-content: flex-start;
+        }
+
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 50px;
+            margin-top: 50px;
+        }
+        .about .content-right img {
+            width: 400px;
+            top: 0;
+            shape-margin: 15px;
+            padding-bottom: 50px;
+        }
+
+        #image {
+            width: 100%;
+            margin-left:20px;
+        }
+        .section:nth-last-child(2) .price-icon{
+        padding-right:50px;
+        }
+
+        .service #seed-img {
+            position: absolute;
+            bottom: -10px;
+            left: 300px;
+            width: 250px;
+        }
+        .section h3{
+            margin:10px 0;
+        }
+        .boxes {
+            
+            margin-top: 141px;
+        
+        }
+        .section a {
+            width: 150px;
+            margin:10px 0;           
+        }
+    } 
